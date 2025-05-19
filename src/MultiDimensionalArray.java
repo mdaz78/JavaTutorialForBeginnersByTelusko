@@ -29,6 +29,8 @@ public class MultiDimensionalArray {
     print(jagged);
     System.out.println("----------");
     printNewForLoop(jagged);
+    System.out.println("----------");
+    printForEach(jagged);
 
     // Array of Objects
     Student s1 = new Student();
@@ -69,6 +71,15 @@ public class MultiDimensionalArray {
       System.out.println(student[i].name);
       System.out.println(student[i].rollNo);
       System.out.println(student[i].marks);
+    }
+  }
+
+  public static void printForEach(int arr[][]) {
+    for (int[] row : arr) {
+      for (int element : row) {
+        System.out.print(element + "    ");
+      }
+      System.out.println();
     }
   }
 
